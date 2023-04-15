@@ -1,0 +1,110 @@
+
+
+
+
+// commons 
+
+body {
+    background-color: rgb(230, 246, 250);
+}
+
+h1 h2 h3 h4 h5 p {
+    font-family: $mainFont;
+    color: black;
+    
+}
+
+h1 {
+    font-size: $textMdDos;
+}
+
+h2 {
+    font-size: $textMd;
+}
+
+h3 {
+    font-size: $textMd;
+}
+
+p {
+    font-size: $textSm;
+}
+
+
+// bgs
+
+
+.bg-worldcup {
+    background-color: rgba(85, 13, 13, 0.808);
+   
+}
+
+.bg-ucl {
+    background-color: rgb(93, 82, 194);
+}
+
+.bg-ligue {
+     background-color: rgb(78, 78, 131);
+}
+
+
+// text-aligns 
+
+.text-center {
+    text-align: center;
+}
+
+// text-sizes 
+
+.text-size-md {
+    font-size: $textMd;
+}
+
+.text-size-md-dos {
+    font-size: $textMdDos;
+}
+
+.text-size-lg {
+    font-size: $textLg;
+}
+
+// text color
+ 
+.text-lightblue {
+    color: lightblue !important;
+}
+
+.text-argentina {
+    color: rgb(199, 199, 30) !important;
+}
+
+.text-barcelona {
+    color: rgb(28, 28, 207) !important;
+}
+
+.text-psg {
+    color: rgb(187, 177, 177) !important;
+}
+
+.text-balondeoro {
+    color: gold !important;
+}
+
+.text-thebest {
+    color: paleturquoise !important;
+}
+
+
+// margins 
+
+.margin-y {
+    margin: 1em 0em;
+}
+
+.margin-left {
+    margin-left: 2.5em !important;
+}
+
+
+// flex 
+

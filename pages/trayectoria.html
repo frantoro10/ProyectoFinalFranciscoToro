@@ -9,14 +9,15 @@
     <title>Fan page de Leo Messi! Aprende y disfruta todo lo relacionado a Leo Messi!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-    <!-- Start navegador -->
+    <!-- Start nav -->
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid bg-nav-footer">
-            <a class="navbar-brand" href="../index.html">Messi</a>
+        <div class="container-fluid nav__box ">
+            <a class="navbar-brand font-lg" href="../index.html">Messi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -24,16 +25,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  mb-lg-0 m-auto">
-                    <li class="nav-item">
+                    <li class="nav-item font-md">
                         <a class="nav-link" href="trayectoria.html">Trayectoria</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item font-md">
                         <a class="nav-link" href="partidos.html">Partidos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item font-md">
                         <a class="nav-link" href="galeria.html">Galeria</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item font-md">
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
 
@@ -42,72 +43,91 @@
         </div>
     </nav>
 
-    <!-- Inicia contenido princiapl -->
-
     <main>
-        <div class="bg-black">
-            <h1>Los datos mas importantes de la carrera de Leo Messi.</h1>
-            <section>
-                <h2>Equipos donde messi jugo y su rol</h2>
-                <article>
-                    <h3>Seleccion Argentina</h3>
-                    <img src="../Imagenes/trayectoria/messi-seleccion.jpg" alt="Messi con la seleccion argentina"
-                        class="img-galeria">
+       <article>
+        <h1 class="text-size-lg text-center">Los datos mas importantes de la carrera de Leo Messi.</h1>
+        <p class="text-size-md-dos text-center">Aqui encontraras los datos mas importantes sobre Leo Messi! Espero que disfrutes.</p>
+        </article>
+
+        <h2 class="text-size-md-dos text-center margin-y">¿En que equipos ha jugado Leo Messi?</h2>
+        <!-- Start section de equipos jugados -->
+
+        <section class="trayectoria__section--equipos">
+            <article class="section--argentina">
+                <div class="trayectoria__section--text">
+                    <h3 class="text-argentina">Seleccion Argentina</h3>
                     <p>En el año 2005 Leo Messi debutaba con su seleccion Argentina. El 10 soñaba desde chico triunfar
                         con ella pero en el trayecto hubieron muchas piedras en el camino llenas de dolor y derrota,
                         pero Messi jamas se rindio y fiel a su estilo consiguio ganar todo lo que deseaba con el Mundial
                         2022 como su broche de oro.</p>
-                </article>
-                <article>
-                    <h3>Barcelona</h3>
-                    <img src="../Imagenes/trayectoria/messi-barcelona.jpg" alt="Messi jugando con Barcelona"
-                        class="img-galeria">
+                </div>
+                <div class="trayectoria__section--image">
+                    <img src="../Imagenes/trayectoria/messi-argentina.webp" alt="Messi con la seleccion argentina">
+                </div>
+            </article>
+            <article class="section--barcelona">
+                <div class="trayectoria__section--text">
+                    <h3 class="text-barcelona">Barcelona</h3>
                     <p>En el año 2004 Leo Messi debutaba con el Barcelona de España en un partido amistoso luego el
                         resto es historia. Messi desde sus primeros años consiguio arrasar con toda competicion que se
                         le ponia en frente hasta el final de su etapa Cule. Se consolido como el mejor jugador del mundo
                         y gano todo tipo de premio colectivo e individual.</p>
-                </article>
-                <article>
-                    <h3>PSG</h3>
-                    <img src="../Imagenes/trayectoria/messi-psg.jpg" alt="Messi jugando con el PSG" class="img-galeria">
+                </div>
+                <div class="trayectoria__section--image">
+                    <img src="../Imagenes/trayectoria/messi-barcelona.webp" alt="Messi con la seleccion argentina">
+                </div>
+            </article>
+            <article class="section--psg">
+                <div class="trayectoria__section--text">
+                    <h3 class="text-psg">PSG</h3>
                     <p>En su etapa final de su carrera Leo Messi debutaba con el PSG en el año 2021. Formaria equipo con
                         la nueva estrella del momento Mbappe que con su juventud buscaria la gloria junto al viejo rey
                         invicto. Leo busca cumplir el sueño del PSG de conseguir su primera UCL. Sin dudas creemos que
                         lo lograra, porque es el mas ganador.</p>
-                </article>
-            </section>
-        </div>
+                </div>
+                <div class="trayectoria__section--image">
+                    <img src="../Imagenes/trayectoria/messi-psg.webp" alt="Messi con la seleccion argentina">
+                </div>
+            </article>
+        </section>
+
         <!-- End 1 box -->
-        <div class="bg-black">
-            <section>
-                <article>
-                    <h2>Los titulos y premios mas importantes de Leo Messi</h2>
-                    <h3>Premios Individuales</h3>
-                    <p>Leo messi consiguio hacerse con todos los premios indiviuales habidos por haber y se dio el lujo
-                        de repetirlos! Sin dudas ha tenido una regularidad impresionante combinado con un rendimiento
-                        digno de extraterrestre.</p>
-                    <img src="../Imagenes/trayectoria/balondeoro.jpg" alt="Balon de Oro" class="img-galeria">
-                    <!-- <img src="../Imagenes/trayectoria/thebest.jpg" alt="Premio The Best" class="img-galeria"> -->
-                    <img src="../Imagenes/trayectoria/botindeoro.jpg" alt="Botin de Oro" class="img-galeria">
-                </article>
-            </section>
-        </div>
-        <!-- End 2 box -->
-        <div class="bg-black">
-            <section>
-                <article>
-                    <h3>Premios Colectivos</h3>
-                    <p>Leo Messi gano todos los titulos colectivos en los que ha participado pero sin dudas los mas
-                        valiosos para el fueron los titulos de su seleccion.</p>
-                    <!-- <img src="../Imagenes/trayectoria/ucl.jpg" alt="UCL" class="img-galeria"> -->
-                    <img src="../Imagenes/trayectoria/ligaespañola.jpg" alt="Liga Española" class="img-galeria">
-                    <img src="../Imagenes/trayectoria/copaamerica.jpg" alt="Copa America" class="img-galeria">
-                    <img src="../Imagenes/trayectoria/finalisima.jpg" alt="Finalissima" class="img-galeria">
-                    <img src="../Imagenes/trayectoria/mundial.jpg" alt="World Cup" class="img-galeria">
-                </article>
-            </section>
-        </div>
-        <!-- End 3 Box -->
+
+        <h2 class="text-size-md-dos text-center margin-y">¿Que premios individuales gano Messi?</h2>
+        <!-- Start section de equipos jugados -->
+
+        <section class="trayectoria__section--equipos">
+            <article class="section--balondeoro">
+                <div class="trayectoria__section--text">
+                    <h3 class="text-balondeoro">Balon de Oro</h3>
+                    <p>Leo Messi ha ganado un total de 7 balones de oro. Ha dominado el futbol mundial. Y se espera que gane el octavo en 2023.</p>
+                </div>
+                <div class="trayectoria__section--image">
+                    <img src="../Imagenes/trayectoria/messi-balondeoro.webp" alt="Messi con la seleccion argentina">
+                </div>
+            </article>
+            <article class="section--thebest">
+                <div class="trayectoria__section--text">
+                    <h3 class="text-thebest">The Best</h3>
+                    <p>Messi ha ganado dos veces el The Best. Si se hubiera entregado antes, lo hubiera ganado 7 veces sin dudas.</p>
+                </div>
+                <div class="trayectoria__section--image">
+                    <img src="../Imagenes/trayectoria/messi-thebest.webp" alt="Messi con la seleccion argentina">
+                </div>
+            </article>
+            <article class="section--botin">
+                <div class="trayectoria__section--text">
+                    <h3 class="text-balondeoro">Botin de Oro</h3>
+                    <p>Leo Messi ha ganado 5 botines de oro. Siendo pichichi con gran diferencia de goles al resto de jugadore.</p>
+                </div>
+                <div class="trayectoria__section--image">
+                    <img src="../Imagenes/trayectoria/messi-botin.webp" alt="Messi con la seleccion argentina">
+                </div>
+            </article>
+        </section>
+
+
+        <!-- End 2 Box -->
     </main>
 
     <!-- Inicia footer -->
@@ -117,7 +137,7 @@
             <p>Pagina sin fines de lucro</p>
             <p>Copyright Francisco</p>
         </div>
-        <div class="footer-icon">
+        <div class="footer-icon__box">
             <a href="https://www.facebook.com/leomessi" target="_blank" rel="noopener noreferrer">
                 <img src="../Imagenes/iconos/facebook-social-media-svgrepo-com.svg" alt="Seguilo a Messi en Facebook!">
             </a>
@@ -125,7 +145,7 @@
                 <img src="../Imagenes/iconos/instagram-rounded-svgrepo-com.svg" alt="Seguilo a Messi Instagram">
             </a>
             <a href="https://www.youtube.com/@LeoMessi/featured" target="_blank" rel="noopener noreferrer">
-                <img src="../Imagenes/iconos/youtube-rounded-svgrepo-com.svg" alt="Mira los videos de Messi">
+                <img src="../Imagenes/iconos/youtube-rounded-svgrepo-com.svg" alt="Mira los videos del Messi">
             </a>
         </div>
     </footer>
@@ -133,6 +153,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,61 @@
+/* start contenido del index*/
+
+.index-intro__box { 
+    @include flex (column,center,center);
+    background-color: map-get($map: $paleta-box, $key: cuatro );
+    font-weight: $textLight !important;
+
+        img {
+            width: $widthFull;
+        }
+        
+        article {
+
+            h1 {
+                @include textos ($mainFont,$textMdDos, 1.7em, $textBold, center, lightblue);
+                    margin: 1em 0em;
+            }
+            
+            p{
+                @include textos ($mainFont, $textSm, 1.2em, $textLight, left, lightblue);
+                margin: 1em 0em;
+                margin-left: 1em; 
+            }
+        }
+}
+  
+
+
+   
+
+.index-h2__box {
+
+    @include textos ($mainFont, $textMdDos, 1.7em, $textBold, center, black);
+    margin: 2em 0em;
+}    
+
+.index-card__box {
+
+    figure {
+        width: $widthFull;
+        border: 2px solid black;
+        
+    }
+}
+
+.card-body {
+
+    figcaption {
+        font-weight: $textBold;
+    }
+
+    p {
+        color: black;
+        font-weight: $textLight;
+    }
+    
+}
+
+
+    
+

@@ -1,0 +1,103 @@
+// Galeria 
+
+.galeria-h1 {
+    @include textos ($mainFont, $textLg, 1.9em, $textBold, center, black);
+    margin: 1.5em 0em;
+}
+
+// Start Galeria 
+
+.galeria__box {
+    display: grid;
+    justify-content: center;
+    border: 5px solid black;
+    grid-template-columns: 48vw 48vw;
+    grid-template-rows: repeat(7,25vh);
+    grid-template-areas:    
+    "img1 img2"
+    "img1 img3"
+    "img4 img5"
+    "img6 img7"
+    "img8 img9"
+    "video1 video2"
+    "video3 video4"
+    ;
+    column-gap: 0.2em;
+    row-gap: 0.2em;
+
+        div {
+            border: 3px solid;
+
+            img {
+                width: $widthFull;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+            iframe {
+                width: $widthFull;
+                height: 100%;
+            }
+        }
+}
+
+.gimg1 {
+    grid-area: img1;       
+
+ }
+ .gimg2 {
+
+    grid-area: img2;
+
+ }
+ .gimg3 {
+    grid-area: img3;
+ }
+
+ .gimg4 {
+    grid-area: img4;
+ }
+ .gimg5 {
+
+    grid-area: img5;
+ }
+
+ .gimg6 {
+    grid-area: img6;
+ }
+
+ .gimg7 {
+    grid-area: img7;
+ }
+
+ .gimg8 {
+    grid-area: img8;
+ }
+
+ .gimg9 {
+    grid-area: img9;
+ }
+
+ .g-video1 {
+    grid-area: video1;
+    width: 100%;
+
+ }
+
+ .g-video2 {
+    grid-area: video2;
+    width: 100%;
+    
+ }
+
+ .g-video3 {
+    grid-area: video3;
+    width: 100%;
+    
+ }
+
+ .g-video4 {
+    grid-area: video4;
+    width: 100%;
+    
+ }

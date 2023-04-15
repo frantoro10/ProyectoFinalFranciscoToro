@@ -1,0 +1,750 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+body {
+  background-color: rgb(230, 246, 250);
+}
+
+h1 h2 h3 h4 h5 p {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 1em;
+}
+
+.bg-worldcup {
+  background-color: rgba(85, 13, 13, 0.808);
+}
+
+.bg-ucl {
+  background-color: rgb(93, 82, 194);
+}
+
+.bg-ligue {
+  background-color: rgb(78, 78, 131);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-size-md {
+  font-size: 1.3em;
+}
+
+.text-size-md-dos {
+  font-size: 1.5em;
+}
+
+.text-size-lg {
+  font-size: 2em;
+}
+
+.text-lightblue {
+  color: lightblue !important;
+}
+
+.text-argentina {
+  color: rgb(199, 199, 30) !important;
+}
+
+.text-barcelona {
+  color: rgb(28, 28, 207) !important;
+}
+
+.text-psg {
+  color: rgb(187, 177, 177) !important;
+}
+
+.text-balondeoro {
+  color: gold !important;
+}
+
+.text-thebest {
+  color: paleturquoise !important;
+}
+
+.margin-y {
+  margin: 1em 0em;
+}
+
+.margin-left {
+  margin-left: 2.5em !important;
+}
+
+.nav__box {
+  background-color: rgb(243, 243, 243);
+}
+
+/* start contenido del index*/
+.index-intro__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(5, 5, 5);
+  font-weight: 300 !important;
+}
+.index-intro__box img {
+  width: 100%;
+}
+.index-intro__box article h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  font-weight: 500;
+  text-align: center;
+  color: lightblue;
+  margin: 1em 0em;
+}
+.index-intro__box article p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 300;
+  text-align: left;
+  color: lightblue;
+  margin: 1em 0em;
+  margin-left: 1em;
+}
+
+.index-h2__box {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  margin: 2em 0em;
+}
+
+.index-card__box figure {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.card-body figcaption {
+  font-weight: 500;
+}
+.card-body p {
+  color: black;
+  font-weight: 300;
+}
+
+.galeria-h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  line-height: 1.9em;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  margin: 1.5em 0em;
+}
+
+.galeria__box {
+  display: grid;
+  justify-content: center;
+  border: 5px solid black;
+  grid-template-columns: 48vw 48vw;
+  grid-template-rows: repeat(7, 25vh);
+  grid-template-areas: "img1 img2" "img1 img3" "img4 img5" "img6 img7" "img8 img9" "video1 video2" "video3 video4";
+  column-gap: 0.2em;
+  row-gap: 0.2em;
+}
+.galeria__box div {
+  border: 3px solid;
+}
+.galeria__box div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.galeria__box div iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.gimg1 {
+  grid-area: img1;
+}
+
+.gimg2 {
+  grid-area: img2;
+}
+
+.gimg3 {
+  grid-area: img3;
+}
+
+.gimg4 {
+  grid-area: img4;
+}
+
+.gimg5 {
+  grid-area: img5;
+}
+
+.gimg6 {
+  grid-area: img6;
+}
+
+.gimg7 {
+  grid-area: img7;
+}
+
+.gimg8 {
+  grid-area: img8;
+}
+
+.gimg9 {
+  grid-area: img9;
+}
+
+.g-video1 {
+  grid-area: video1;
+  width: 100%;
+}
+
+.g-video2 {
+  grid-area: video2;
+  width: 100%;
+}
+
+.g-video3 {
+  grid-area: video3;
+  width: 100%;
+}
+
+.g-video4 {
+  grid-area: video4;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(243, 243, 243);
+  margin-top: 1em;
+}
+footer p {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+.footer-icon__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer-icon__box a {
+  width: 12%;
+  margin: 0.2em;
+}
+.footer-icon__box a img {
+  width: 100%;
+}
+
+.trayectoria__section--equipos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.trayectoria__section--image {
+  width: 99%;
+  border: solid 2px rgb(173, 113, 113);
+}
+.trayectoria__section--image img {
+  width: 100%;
+}
+
+.trayectoria__section--text h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  font-weight: 500;
+  text-align: left;
+  color: black;
+  margin-left: 0.3em;
+}
+.trayectoria__section--text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  font-weight: 300;
+  text-align: left;
+  color: black;
+  margin-left: 0.3em;
+}
+
+.section--argentina {
+  background-color: lightblue;
+  border: 2px solid black;
+}
+
+.section--barcelona {
+  background-color: rgb(204, 81, 107);
+  border: 2px solid blue;
+}
+
+.section--psg {
+  background: rgb(147, 147, 209);
+  border: 2px solid gray;
+}
+
+.section--balondeoro {
+  background-color: rgb(187, 183, 183);
+  border: 2px solid black;
+}
+
+.section--thebest {
+  background-color: rgb(80, 125, 139);
+  border: 2px solid blue;
+}
+
+.section--botin {
+  background: rgb(155, 155, 180);
+  border: 2px solid gray;
+}
+
+.partidos__intro {
+  margin-top: 2em;
+}
+.partidos__intro h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+}
+.partidos__intro p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+}
+
+.partidos__article--worldcup {
+  width: 99%;
+  margin-top: 1em;
+}
+.partidos__article--worldcup div {
+  width: 99%;
+}
+.partidos__article--worldcup div img {
+  width: 100%;
+}
+.partidos__article--worldcup h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+}
+.partidos__article--worldcup p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+}
+
+.partidos__article--ucl {
+  width: 99%;
+  margin-top: 1em;
+}
+.partidos__article--ucl div {
+  border: 2px solid black;
+  width: 99%;
+}
+.partidos__article--ucl div img {
+  width: 100%;
+}
+.partidos__article--ucl h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+}
+.partidos__article--ucl p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+}
+
+.partidos__article--ligue {
+  width: 99%;
+  margin-top: 1em;
+}
+.partidos__article--ligue div {
+  border: 2px solid black;
+  width: 99%;
+}
+.partidos__article--ligue div img {
+  width: 100%;
+}
+.partidos__article--ligue h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+}
+.partidos__article--ligue p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+}
+
+#partidos__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.partidos-table__box {
+  width: 99%;
+  font-size: 1.2em;
+}
+.partidos-table__box thead {
+  width: 99%;
+  text-align: center;
+}
+.partidos-table__box tbody {
+  background: rgb(226, 223, 223);
+  text-align: center;
+  width: 50%;
+}
+.partidos-table__box tbody .td--one {
+  width: 30%;
+  border: 1px solid black;
+  font-size: 0.9em;
+}
+.partidos-table__box tbody .td--two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid black;
+  padding: 1em 0em;
+}
+.partidos-table__box tbody .td--two img {
+  margin: 0.5em;
+}
+.partidos-table__box tbody .td--three {
+  width: 33%;
+  border: 2px solid black;
+}
+
+.contacto__formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgb(231, 228, 228);
+}
+.contacto__formulario div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contacto__formulario label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  margin: 0.4em 0em;
+}
+.contacto__formulario input {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+}
+.contacto__formulario .formulario_button {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .index-intro__box article h1 {
+    font-size: 2em;
+  }
+  .index-intro__box article p {
+    font-size: 1.3em;
+  }
+}
+@media (width > 1200px) {
+  .index-intro__box {
+    flex-direction: row-reverse;
+  }
+  .index-intro__box article {
+    width: 50%;
+  }
+  .index-intro__box article h1 {
+    margin: 0.5em 0em;
+  }
+  .index-intro__box article p {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+  }
+}
+@media (width > 1500px) {
+  .index-intro__box {
+    flex-direction: row-reverse;
+  }
+  .index-intro__box article {
+    width: 50%;
+  }
+  .index-intro__box article h1 {
+    margin-bottom: 2em;
+    font-size: 2em;
+  }
+  .index-intro__box article p {
+    font-size: 1.5em;
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .index-card__box figure {
+    width: 49% !important;
+    font-size: 1em;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-icon__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    margin-right: 1em;
+  }
+  .footer-icon__box a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+  }
+  .footer-icon__box a img {
+    width: 100%;
+  }
+  .galeria__box {
+    grid-template-columns: repeat(4, 24.5vw);
+    grid-template-rows: repeat(4, 30vh);
+    grid-template-areas: "img1 img2 img3 img4" "img1 img5 img6 img6" "img7 img7 img8 img9 " "video1 video2 video3 video4";
+  }
+}
+@media (width > 1200px) {
+  .font-lg {
+    font-size: 2em;
+  }
+  .font-md {
+    font-size: 1.3em;
+  }
+  .index-card__box figure {
+    width: 33% !important;
+  }
+  .card-body figcaption {
+    font-size: 1.1em;
+  }
+  .card-body a {
+    font-size: 1.1em;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer p {
+    font-size: 1.2em;
+  }
+  .footer-icon__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 33%;
+    margin-right: 1em;
+    width: 20%;
+  }
+  .footer-icon__box a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+  }
+  .footer-icon__box a img {
+    width: 100%;
+  }
+  .galeria__box {
+    grid-template-columns: repeat(4, 24.5vw);
+    grid-template-rows: repeat(4, 40vh);
+    grid-template-areas: "img1 img2 img3 img4" "img1 img5 img6 img6" "img7 img7 img8 img9 " "video1 video2 video3 video4";
+  }
+  .partidos__intro h1 {
+    font-size: 2em;
+  }
+  .partidos__intro p {
+    font-size: 1.5em;
+    line-height: 1.7em;
+  }
+  .partidos__article--worldcup h2 {
+    font-size: 2em;
+  }
+  .partidos__article--worldcup p {
+    font-size: 1.5em;
+    line-height: 1.7em;
+  }
+  .partidos__article--ucl h2 {
+    font-size: 2em;
+  }
+  .partidos__article--ucl p {
+    font-size: 1.5em;
+    line-height: 1.7em;
+  }
+  .partidos__article--ligue h2 {
+    font-size: 2em;
+  }
+  .partidos__article--ligue p {
+    font-size: 1.5em;
+    line-height: 1.7em;
+  }
+  .partidos-table__box tbody .td--one {
+    font-size: 1.5em;
+  }
+  .partidos-table__box tbody .td--two img {
+    width: 8%;
+  }
+  .partidos-table__box tbody .td--three {
+    font-size: 1.5em;
+  }
+  .trayectoria__section--equipos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .trayectoria__section--text h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 500;
+    text-align: left;
+    color: black;
+    margin-left: 0.3em;
+  }
+  .trayectoria__section--text p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    font-weight: 300;
+    text-align: left;
+    color: black;
+    margin-left: 0.3em;
+  }
+  .section--argentina {
+    width: 33%;
+  }
+  .section--barcelona {
+    width: 33%;
+  }
+  .section--psg {
+    width: 33%;
+  }
+  .section--balondeoro {
+    width: 33%;
+  }
+  .section--thebest {
+    width: 33%;
+  }
+  .section--botin {
+    width: 33%;
+  }
+  .contacto__intro {
+    margin: 2em 0em;
+  }
+  .contacto__formulario {
+    width: 100%;
+  }
+  .contacto__formulario div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacto__formulario label {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    line-height: 2.2em;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    margin: 0.4em 1em;
+  }
+  .contacto__formulario input {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    line-height: 2.2em;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+  }
+  .contacto__formulario textarea {
+    width: 100%;
+  }
+  .contacto__formulario .formulario_button {
+    margin-left: 7em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

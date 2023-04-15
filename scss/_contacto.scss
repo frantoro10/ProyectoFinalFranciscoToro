@@ -1,0 +1,32 @@
+// Estilo del formulario de contacto.
+
+.contacto__formulario {
+    @include flex (column, center, center);
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(231, 228, 228);
+
+        div {
+            @include flex (column, center, center);
+        }
+
+        label {
+            @include textos ($mainFont, $textMdDos, 1.7em, 500, center, black);
+            margin: 0.4em 0em;
+        }
+
+        input {
+            @include textos ($mainFont, $textMd, 1.4em, 300, center, black);
+        }
+
+        .formulario_button {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: 1em;
+        }
+
+        
+}
+
+ 
+ 

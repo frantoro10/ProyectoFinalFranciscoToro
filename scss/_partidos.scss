@@ -1,0 +1,140 @@
+// Estilos de la page de Partidos 
+
+// Articulos h1 parrafos  e imagenes
+
+
+
+.partidos__intro {
+
+    margin-top: 2em;
+
+    h1 {
+        @include textos ($mainFont, $textMdDos, 1.6em, 500, center, black);
+    }
+
+    p {
+        @include textos ($mainFont, $textSm, 1.2em, 300, center, black);
+    }
+}
+
+.partidos__article--worldcup {
+    
+    width: 99%;
+    margin-top: 1em;
+
+    div {
+        width: 99%;
+
+        img {
+            width: 100%
+        }
+
+    }
+
+    h2 {
+        @include textos ($mainFont, $textMdDos, 1.6em, 500, center, black);
+    }
+
+    p {
+        @include textos ($mainFont, $textSm, 1.2em, 300, center, black);
+
+    }
+}
+
+.partidos__article--ucl {
+    
+     width: 99%;
+    margin-top: 1em;
+
+    div {
+        border: 2px solid black;
+        width: 99%;
+
+        img {
+            width: 100%
+        }
+
+    }
+
+    h2 {
+        @include textos ($mainFont, $textMdDos, 1.6em, 500, center, black);
+    }
+
+    p {
+        @include textos ($mainFont, $textSm, 1.2em, 300, center, black);
+
+    }
+}
+
+.partidos__article--ligue {
+
+    width: 99%;
+    margin-top: 1em;
+
+    div {
+        border: 2px solid black;
+        width: 99%;
+
+        img {
+            width: 100%
+        }
+
+    }
+
+    h2 {
+        @include textos ($mainFont, $textMdDos, 1.6em, 500, center, black);
+    }
+
+    p {
+        @include textos ($mainFont, $textSm, 1.2em, 300, center, black);
+
+    }
+}
+
+
+
+// Start tabla proximos partidos 
+
+#partidos__box {
+    @include flex (column, center, center);
+}
+
+.partidos-table__box {
+    width: 99%;
+    font-size: $textSmDos;
+
+    thead {
+        width: 99%;
+        text-align: center;
+    }
+
+    tbody {
+        background: rgb(226, 223, 223);
+        text-align: center;
+        width: $widthMid;
+
+        .td--one {
+            width: 30%;
+            border: 1px solid black;
+            font-size: 0.9em;
+
+        }
+
+        .td--two {
+            @include flex (row, center, center);
+            width: 100%;
+            border: 2px solid black;
+            padding: 1em 0em;
+
+            img {
+                margin: 0.5em;
+                
+            }
+        }
+
+        .td--three {
+            width: 33%;
+            border: 2px solid black
+        }
+    }
+}
