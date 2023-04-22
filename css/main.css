@@ -259,21 +259,25 @@ footer p {
   width: 100%;
 }
 
-.trayectoria__section--equipos {
+.trayectoria__section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-.trayectoria__section--image {
+.trayectoria__section article {
+  background-color: white;
   width: 99%;
+  border: 2px solid rgb(224, 214, 157);
+  margin: 0em 1em;
+}
+.trayectoria__section--image {
+  width: 100%;
   border: solid 2px rgb(173, 113, 113);
 }
 .trayectoria__section--image img {
   width: 100%;
 }
-
 .trayectoria__section--text h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.3em;
@@ -291,36 +295,6 @@ footer p {
   text-align: left;
   color: black;
   margin-left: 0.3em;
-}
-
-.section--argentina {
-  background-color: lightblue;
-  border: 2px solid black;
-}
-
-.section--barcelona {
-  background-color: rgb(204, 81, 107);
-  border: 2px solid blue;
-}
-
-.section--psg {
-  background: rgb(147, 147, 209);
-  border: 2px solid gray;
-}
-
-.section--balondeoro {
-  background-color: rgb(187, 183, 183);
-  border: 2px solid black;
-}
-
-.section--thebest {
-  background-color: rgb(80, 125, 139);
-  border: 2px solid blue;
-}
-
-.section--botin {
-  background: rgb(155, 155, 180);
-  border: 2px solid gray;
 }
 
 .partidos__intro {
@@ -343,128 +317,77 @@ footer p {
   color: black;
 }
 
-.partidos__article--worldcup {
-  width: 99%;
-  margin-top: 1em;
-}
-.partidos__article--worldcup div {
-  width: 99%;
-}
-.partidos__article--worldcup div img {
-  width: 100%;
-}
-.partidos__article--worldcup h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
-  line-height: 1.6em;
-  font-weight: 500;
-  text-align: center;
-  color: black;
-}
-.partidos__article--worldcup p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1em;
-  line-height: 1.2em;
-  font-weight: 300;
-  text-align: center;
-  color: black;
-}
-
-.partidos__article--ucl {
-  width: 99%;
-  margin-top: 1em;
-}
-.partidos__article--ucl div {
-  border: 2px solid black;
-  width: 99%;
-}
-.partidos__article--ucl div img {
-  width: 100%;
-}
-.partidos__article--ucl h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
-  line-height: 1.6em;
-  font-weight: 500;
-  text-align: center;
-  color: black;
-}
-.partidos__article--ucl p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1em;
-  line-height: 1.2em;
-  font-weight: 300;
-  text-align: center;
-  color: black;
-}
-
-.partidos__article--ligue {
-  width: 99%;
-  margin-top: 1em;
-}
-.partidos__article--ligue div {
-  border: 2px solid black;
-  width: 99%;
-}
-.partidos__article--ligue div img {
-  width: 100%;
-}
-.partidos__article--ligue h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
-  line-height: 1.6em;
-  font-weight: 500;
-  text-align: center;
-  color: black;
-}
-.partidos__article--ligue p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1em;
-  line-height: 1.2em;
-  font-weight: 300;
-  text-align: center;
-  color: black;
-}
-
-#partidos__box {
+.partidos__box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
-
-.partidos-table__box {
+.partidos__box h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+}
+.partidos__box p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+}
+.partidos__box article {
+  width: 99%;
+  margin-top: 1em;
+}
+.partidos__box article div {
+  width: 100%;
+}
+.partidos__box article div img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.partidos__box table {
   width: 99%;
   font-size: 1.2em;
 }
-.partidos-table__box thead {
-  width: 99%;
+.partidos__box table thead {
+  width: 100%;
   text-align: center;
-}
-.partidos-table__box tbody {
-  background: rgb(226, 223, 223);
-  text-align: center;
-  width: 50%;
-}
-.partidos-table__box tbody .td--one {
-  width: 30%;
+  background-color: rgb(214, 214, 214);
   border: 1px solid black;
-  font-size: 0.9em;
 }
-.partidos-table__box tbody .td--two {
+.partidos__box table thead th {
+  border: 2px solid black;
+}
+.partidos__box table tbody {
+  background-color: rgb(10, 8, 8);
+  text-align: center;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+.partidos__box table tbody tr {
+  width: 100%;
+  border: 2px solid black;
+}
+.partidos__box table tbody .td--one {
+  border: 2px solid black;
+}
+.partidos__box table tbody .td--two {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  border: 2px solid black;
   padding: 1em 0em;
 }
-.partidos-table__box tbody .td--two img {
+.partidos__box table tbody .td--two img {
   margin: 0.5em;
 }
-.partidos-table__box tbody .td--three {
-  width: 33%;
+.partidos__box table tbody .td--three {
   border: 2px solid black;
 }
 
@@ -581,6 +504,12 @@ footer p {
     grid-template-rows: repeat(4, 30vh);
     grid-template-areas: "img1 img2 img3 img4" "img1 img5 img6 img6" "img7 img7 img8 img9 " "video1 video2 video3 video4";
   }
+  .trayectoria__section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media (width > 1200px) {
   .font-lg {
@@ -636,79 +565,36 @@ footer p {
   }
   .partidos__intro p {
     font-size: 1.5em;
-    line-height: 1.7em;
+    line-height: 1.6em;
   }
-  .partidos__article--worldcup h2 {
+  .partidos__box p {
+    font-size: 1.5em;
+    line-height: 1.6em;
+  }
+  .partidos__box h2 {
     font-size: 2em;
-  }
-  .partidos__article--worldcup p {
-    font-size: 1.5em;
     line-height: 1.7em;
   }
-  .partidos__article--ucl h2 {
-    font-size: 2em;
+  .partidos__box article div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .partidos__article--ucl p {
-    font-size: 1.5em;
-    line-height: 1.7em;
+  .partidos__box article div img {
+    width: 80%;
   }
-  .partidos__article--ligue h2 {
-    font-size: 2em;
+  .partidos__box table {
+    width: 79%;
   }
-  .partidos__article--ligue p {
-    font-size: 1.5em;
-    line-height: 1.7em;
+  .partidos__box table tbody .td--two img {
+    margin: 0em 3em;
   }
-  .partidos-table__box tbody .td--one {
-    font-size: 1.5em;
-  }
-  .partidos-table__box tbody .td--two img {
-    width: 8%;
-  }
-  .partidos-table__box tbody .td--three {
-    font-size: 1.5em;
-  }
-  .trayectoria__section--equipos {
+  .trayectoria__section {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-  }
-  .trayectoria__section--text h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    font-weight: 500;
-    text-align: left;
-    color: black;
-    margin-left: 0.3em;
-  }
-  .trayectoria__section--text p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.3em;
-    line-height: 1.3em;
-    font-weight: 300;
-    text-align: left;
-    color: black;
-    margin-left: 0.3em;
-  }
-  .section--argentina {
-    width: 33%;
-  }
-  .section--barcelona {
-    width: 33%;
-  }
-  .section--psg {
-    width: 33%;
-  }
-  .section--balondeoro {
-    width: 33%;
-  }
-  .section--thebest {
-    width: 33%;
-  }
-  .section--botin {
-    width: 33%;
   }
   .contacto__intro {
     margin: 2em 0em;

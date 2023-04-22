@@ -58,7 +58,7 @@
 
 
 
-// Breakpoint tablet sin mixins 
+// Breakpoint tablet 768 sin mixins 
 
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -107,12 +107,17 @@
             "video1 video2 video3 video4"
     }
 
+    // Start Trayectoria Page
+
+    .trayectoria__section {
+        @include flex (row, center, center)
+    }
 
 
 }
 
 
-// Breakpoint desktop sin mixins 
+// Breakpoint desktop 1200+ sin mixins 
 
 
 
@@ -197,110 +202,51 @@
 
         p {
             font-size: $textMdDos;
-            line-height: 1.7em;
+            line-height: 1.6em;
         }
     }
 
+    .partidos__box {
+        p {
+          font-size: $textMdDos;
+          line-height: 1.6em;
+        }
 
-    .partidos__article--worldcup {
         h2 {
             font-size: $textLg;
-        }
-
-        p {
-            font-size: $textMdDos;
-            line-height: 1.7em;
-        }
-    }
-
-    .partidos__article--ucl {
-        h2 {
-            font-size: $textLg;
-        }
-
-        p {
-            font-size: $textMdDos;
-            line-height: 1.7em;
-        }
-    }
-
-    .partidos__article--ligue {
-        h2 {
-            font-size: $textLg;
-        }
-
-        p {
-            font-size: $textMdDos;
             line-height: 1.7em;
         }
 
-    }
-
-    .partidos-table__box {
-        tbody {
-
-            .td--one {
-                font-size: $textMdDos;
+        article {
+            div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                 img {
+                    width: 80%;
+                 }
             }
-
-            .td--two {
-                img {
-                    width: 8%;
-
+        }
+        table {
+            width: 79%;
+                tbody {
+                    .td--two {
+                        img {
+                            margin: 0em 3em;
+                        }
+                    }
                 }
-            }
-
-            .td--three {
-                font-size: $textMdDos;
-            }
         }
 
+        
     }
 
 
-    // Start Trayectoria Box Equipos 
+    // Start Trayectoria Page
 
-    .trayectoria__section--equipos {
+    .trayectoria__section {
         @include flex (row, center, center)
-    }
-
-
-    .trayectoria__section--text {
-        h3 {
-            @include textos ($mainFont, $textMdDos, 1.5em, 500, left, black);
-            margin-left: 0.3em;
-        }
-
-        p {
-            @include textos ($mainFont, $textMd, 1.3em, 300, left, black);
-            margin-left: 0.3em;
-        }
-    }
-
-    .section--argentina {
-        width: 33%;
-    }
-
-
-    .section--barcelona {
-        width: 33%;
-    }
-
-    .section--psg {
-        width: 33%;
-    }
-
-    .section--balondeoro {
-        width: 33%;
-    }
-
-
-    .section--thebest {
-        width: 33%;
-    }
-
-    .section--botin {
-        width: 33%;
     }
 
     // Start Contacto Formulario
@@ -336,175 +282,7 @@
         }
     }
 
-  
-    
+
+
 
 }
-
-
-
-
-
-// @media(min-width:768px){
-
-//     .box-home h1 {
-//        font-size: 2em;
-//     }
-//     .box-home p {
-//         font-size: 1.2em;
-
-//     }
-//     /* card index */
-//     .w-md {
-//         width: 49% !important;
-//         border: 2px solid black;
-//         font-size: 1em;
-
-//     }   
-
-//    footer {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-
-//    } 
-
-//     .footer-icon img{
-//         width: 100%;       
-//     }
-
-//     .footer-icon  {
-//        display: flex;
-//        flex-direction: row;
-//        justify-content: end;
-//        width: 40%;
-//        margin-right: 1.2em;
-
-//     }
-
-//     .footer-icon a {
-//         display: flex;
-//         align-items: center;
-//         width: 15%;
-
-//     }
-
-//     .galeria {
-//         grid-template-columns: repeat(4,24.5vw);
-//         grid-template-rows: repeat(4,30vh);
-//         grid-template-areas:    
-//         "img1 img2 img3 img4"
-//         "img1 img5 img6 img6"
-//         "img7 img7 img8 img9 "
-//         "video1 video2 video3 video4"
-
-//     }
-
-
-
-// }
-
-// @media (min-width: 1200px) {
-//     .box-home {
-//         flex-direction: row-reverse;        
-//     }
-
-//     .box-home h1 {
-//         margin: 0.5em 0em;
-//     }
-
-//     .box-home p {
-//         text-align: center;
-//         font-size: 1.1em;
-//         margin-bottom: 1em;
-//         margin: 0;
-//     }
-
-//     .box-home article {
-//         width: 40%;
-//     }
-
-//     .img-home {
-//         width: 60%;
-//     }
-
-//     .img-home img {
-//         width: 100%;
-
-
-//     }
-
-//     .w-md {
-//         width: 33% !important;
-//     }
-
-//     footer {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-between;
-
-//        } 
-
-//         .footer-icon img{
-//             width: 100%;       
-//         }
-
-//         .footer-icon  {
-//            display: flex;
-//            flex-direction: row;
-//            justify-content: end;
-//            width: 25%;
-
-//         }
-
-//         .footer-icon a {
-//             display: flex;
-//             align-items: center;
-//             width: 15%;
-//         }
-
-//         .galeria {
-//             grid-template-columns: repeat(4,24.5vw);
-//             grid-template-rows: repeat(4,40vh);
-//             grid-template-areas:    
-//             "img1 img2 img3 img4"
-//             "img1 img5 img6 img6"
-//             "img7 img7 img8 img9 "
-//             "video1 video2 video3 video4"
-
-//         }
-
-// }
-
-// @media (min-width: 1500px) {
-//     .box-home {
-//         flex-direction: row-reverse;
-//     }
-
-//     .box-home h1 {
-//         margin: 0.5em 0em;
-//     }
-
-//     .box-home p {
-//         font-size: 1.5em;
-//     }
-
-//     .box-home article {
-//         width: 40%;
-//     }
-
-//     .img-home {
-//         width: 60%;
-//     }
-
-//     .img-home img {
-//         width: 100%;
-
-
-//     }
-
-//     .w-md {
-//         width: 33% !important;
-//     }
-
-// }
