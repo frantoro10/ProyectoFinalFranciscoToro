@@ -176,7 +176,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1em auto;
+  margin: 0em auto;
   width: 80%;
 }
 .index__intro-galeria h3 {
@@ -186,7 +186,8 @@ p {
   font-weight: 500;
   text-align: center;
   color: black;
-  margin: 1em 0em;
+  margin: 0.5em auto;
+  margin-bottom: 1em;
   background-color: rgb(225, 246, 250);
   padding: 0.5em;
   border-radius: 0.6em;
@@ -234,7 +235,6 @@ p {
   grid-template-columns: 48vw 48vw;
   grid-template-rows: repeat(11, 25vh);
   grid-template-areas: "img2 img2" "img2 img2" "img1 img3" "img1 img4" "img5 img6" "img7 img9" "img8 img8" "video1 video1" "video2 video2" "video3 video3" "video4 video4";
-  margin-left: 0.5em;
   column-gap: 0.1em;
   row-gap: 0.1em;
 }
@@ -364,7 +364,7 @@ footer p {
   background-color: white;
   width: 99%;
   border: 2px solid rgb(224, 214, 157);
-  margin: 0em 1em;
+  margin: 1em 1em;
 }
 .trayectoria__section--image {
   width: 100%;

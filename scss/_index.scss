@@ -49,11 +49,12 @@
 
 .index__intro-galeria {
     @include flex (column,center,center);
-    margin: 1em auto;
+    margin: 0em auto;
     width: 80%;
       h3 {
             @include textos ($mainFont, $textLg, 1.3em, $textBold, center, black);
-            margin: 1em 0em;
+            margin: 0.5em auto;
+            margin-bottom: 1em;
             background-color: $bgSecondary;
             padding: 0.5em;
             border-radius: $radiusMain;
