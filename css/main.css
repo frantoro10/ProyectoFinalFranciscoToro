@@ -485,6 +485,7 @@ footer p {
   border: 2px solid black;
 }
 .partidos__box table tbody .td--one {
+  width: 25%;
   border: 2px solid black;
 }
 .partidos__box table tbody .td--two {
@@ -492,17 +493,18 @@ footer p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  margin: 0 auto;
   padding: 1em 0em;
 }
-.partidos__box table tbody .td--two div {
-  width: 30%;
-  margin: 0em auto;
-}
 .partidos__box table tbody .td--two img {
-  width: 100%;
+  width: 20%;
+  margin: 0 auto;
 }
 .partidos__box table tbody .td--three {
   border: 2px solid black;
+  width: 25%;
+  margin: 0 auto;
 }
 
 .contacto__intro {
@@ -805,7 +807,7 @@ footer p {
 }
 @media (min-width: 1500px) {
   .td--two img {
-    width: 6% !important;
+    width: 8% !important;
   }
 }
 
