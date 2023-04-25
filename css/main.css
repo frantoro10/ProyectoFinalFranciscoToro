@@ -396,7 +396,7 @@ footer p {
   display: block;
   margin: 2em auto;
   background-color: rgb(225, 246, 250);
-  width: 80%;
+  width: 90%;
   border-radius: 0.6em;
 }
 .partidos__intro h1 {
@@ -495,6 +495,7 @@ footer p {
   padding: 1em 0em;
 }
 .partidos__box table tbody .td--two img {
+  width: 30%;
   margin: 0.5em;
 }
 .partidos__box table tbody .td--three {
@@ -654,6 +655,9 @@ footer p {
     grid-template-rows: repeat(4, 30vh);
     grid-template-areas: "img1 img2 img3 img4" "img1 img5 img6 img6" "img7 img7 img8 img9 " "video1 video2 video3 video4";
   }
+  .td--two img {
+    width: 15% !important;
+  }
   .trayectoria__section {
     display: flex;
     flex-direction: row;
@@ -719,6 +723,12 @@ footer p {
     grid-template-columns: repeat(4, 24.5vw);
     grid-template-rows: repeat(4, 40vh);
     grid-template-areas: "img1 img2 img3 img4" "img1 img5 img6 img6" "img7 img7 img8 img9 " "video1 video2 video3 video4";
+  }
+  .td--two img {
+    width: 10% !important;
+  }
+  .partidos__intro {
+    width: 75%;
   }
   .partidos__intro h1 {
     font-size: 2em;
@@ -788,6 +798,11 @@ footer p {
   }
   .contacto__formulario--form .formulario__button input {
     margin-left: 6em;
+  }
+}
+@media (min-width: 1500px) {
+  .td--two img {
+    width: 6% !important;
   }
 }
 

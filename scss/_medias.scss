@@ -112,6 +112,14 @@
             "video1 video2 video3 video4"
     }
 
+    // Galeria table
+
+    .td--two {
+        img {
+            width: 15% !important;
+        }
+    }
+
     // Start Trayectoria Page
 
     .trayectoria__section {
@@ -212,10 +220,21 @@
             "video1 video2 video3 video4"
     }
 
+     // Galeria table
+
+     .td--two {
+        img {
+            width: 10% !important;
+            
+        }
+    }
 
     // Start Partidos Page
 
     .partidos__intro {
+
+        width: 75%;
+
         h1 {
             font-size: $textLg;
         }
@@ -305,4 +324,15 @@
         
     }
 
+}
+
+@media (min-width: 1500px) {
+
+    // Galeria table
+
+    .td--two {
+        img {
+            width: 6% !important;
+        }
+    }
 }
