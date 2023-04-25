@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Imagenes/iconos/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Imagenes/iconos/favicon.png" type="image/x-icon">
     <title>Fan page de Leo Messi! Aprende y disfruta todo lo relacionado a Leo Messi!</title>
+    <!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- link css animate -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- css main -->
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
@@ -49,43 +53,47 @@
     <main>
 
         <article class="contacto__intro">
-            <h1 class="text-center text-size-lg">Contacto</h1>
+            <h1 class="text-center text-size-lg wow pulse">Bienvenido al formulario de contacto</h1>
             <p class="text-center text-size-md-dos">Queremos saber que contenido te gustaria agregar o cambiar de
-                nuestro sitio. Llena el
+                nuestro sitio. <br> Llena el
                 formulario! Estamos muy atentos a vos.
         </article>
 
         <!-- Inicia formulario -->
 
         <div class="contacto__formulario">
+        <div class="contacto__formulario--form">
             <form action="envio.php">
                 <div>
                     <label for="name">Nombre</label>
-                    <input type="text" id="name" placeholder="Tu nombre">
+                    <input type="text" id="name" placeholder="Tu nombre"> 
                 </div>
                 <div>
                     <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" placeholder="Tu apellido">
+                    <input type="text" id="apellido" placeholder="Tu apellido">  </input>
                 </div>
                 <div>
-                    <label for="pais">Pais</label>
+                    <label for="pais">  Tu pais!</label>
                     <input type="text" id="pais" placeholder="Tu pais">
                 </div>
                 <div>
-                    <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Tu email">
+                    <label for="email"> &nbsp; &nbsp; Email</label>
+                    <input type="text" id="email" placeholder="Tu email">   
                 </div>
                 <div>
                     <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="15"
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="7"
                         placeholder="El mensaje que quieres dejar">
                     </textarea>
                 </div>
-                <input type="reset" value="Cancelar" class="formulario_button">
-                <input type="submit" value="Enviar">
+                <div class="formulario__button">
+                <input type="reset" value="Cancelar" class=" bg-info text-white">
+                <input type="submit" value="Enviar" class="bg-success text-white">
+            </div>
 
             </form>
         </div>
+    </div>
 
     </main>
 
@@ -109,9 +117,15 @@
         </div>
     </footer>
 
+    <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
+    <!-- script wow -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 

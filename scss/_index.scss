@@ -1,0 +1,67 @@
+// Index 
+
+
+/* start intro del index*/
+
+.index-intro__box { 
+    @include flex (column,center,center);
+    background-color: map-get($map: $paleta-box, $key: cuatro );
+    font-weight: $textLight !important;
+    width: $widthMovil;
+    margin: 0 auto;
+    margin-top: 2em;
+    
+        img {
+            width: $widthFull;
+        }
+        
+        article {
+
+            h1 {
+                @include textos ($mainFont,$textMdDos, 1.7em, $textBold, center, lightblue);
+                    margin: 1em 0em;
+            }
+            
+            p{
+                @include textos ($mainFont, $textSm, 1.2em, $textLight, left, lightblue);
+                margin: 1em 0em;
+                margin-left: 1em; 
+            }
+        }
+}
+
+.index-h2__box {
+
+    @include textos ($mainFont, $textMdDos, 1.7em, $textBold, center, black);
+    @include flex (column, center, center);
+    margin: 1em auto;
+    width: $widthMovil;
+     h2 {
+        background-color: $bgSecondary;
+            padding: 0.5em;
+            border-radius: $radiusMain;
+            
+     }
+}    
+
+
+// Gift Introductorio a galeria.
+
+.index__intro-galeria {
+    @include flex (column,center,center);
+    margin: 1em auto;
+    width: 80%;
+      h3 {
+            @include textos ($mainFont, $textLg, 1.3em, $textBold, center, black);
+            margin: 1em 0em;
+            background-color: $bgSecondary;
+            padding: 0.5em;
+            border-radius: $radiusMain;
+            
+      }
+      a {
+         img {
+            width: 99%;
+         }
+      }   
+}

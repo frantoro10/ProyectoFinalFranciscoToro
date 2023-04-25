@@ -1,44 +1,63 @@
 // Estilos de trayectoria page 
 
 
+// Intro trayectoria
 
+.trayectoria__intro {
+    @include flex (column, center, center);
+    width: $widthMovil;
+    margin: 0 auto;
+
+    h1 {
+        background-color: $bgSecondary;
+        border-radius: $radiusMain;
+        padding: 0.8em;
+    }
+
+}
+
+// h2
+
+.trayectoria__section--h2 {
+    width: $widthMovil;
+}
+
+// Section 
 
 .trayectoria__section {
-    @include flex (column,center,center);
+    @include flex (column, center, center);
+    width: $widthMovil;
+    margin: 0 auto;
+
     article {
         background-color: white;
         width: 99%;
         border: 2px solid rgb(224, 214, 157);
         margin: 0em 1em;
-           
+
     }
+
     &--image {
         width: 100%;
         border: solid 2px rgb(173, 113, 113);
-            img {
-                width: 100%;
-                
-                
-            }
+
+        img {
+            width: 100%;
+
+
+        }
     }
 
     &--text {
         h3 {
-            @include textos ($mainFont, $textMd, 1.5em, 500, left, black);
+            @include textos ($mainFont, $textMdDos, 1.6em, 700, left, black);
             margin-left: 0.3em;
         }
+
         p {
-            @include textos ($mainFont, $textSmDos, 1.3em, 300, left, black);
+            @include textos ($mainFont, $textMd, 1.3em, 300, left, black);
             margin-left: 0.3em;
         }
     }
-    
+
 }
-
-
-
-
-
-
-
-

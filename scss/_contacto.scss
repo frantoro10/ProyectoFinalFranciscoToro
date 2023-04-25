@@ -1,32 +1,70 @@
 // Estilo del formulario de contacto.
 
-.contacto__formulario {
+// contacto intro 
+
+.contacto__intro {
     @include flex (column, center, center);
-    border: 2px solid black;
-    border-radius: 20px;
-    background-color: rgb(231, 228, 228);
+    width: $widthMovil;
+    margin: 1em auto;
 
-        div {
-            @include flex (column, center, center);
-        }
+    p {
+        font-weight: 500;
+        font-size: 1.5em;
+    }
 
-        label {
-            @include textos ($mainFont, $textMdDos, 1.7em, 500, center, black);
-            margin: 0.4em 0em;
-        }
-
-        input {
-            @include textos ($mainFont, $textMd, 1.4em, 300, center, black);
-        }
-
-        .formulario_button {
-            margin-top: 0.5em;
-            margin-bottom: 0.5em;
-            margin-left: 1em;
-        }
-
-        
+    h1 {
+        border: 2px solid rgb(243, 243, 243);
+        padding: 1em;
+        background-color: #318CE7;
+        color: white;
+    }
 }
 
- 
- 
+// contacto form
+
+
+.contacto__formulario {
+    @include flex (column, center, center);
+}
+
+.contacto__formulario--form {
+    @include flex (column, center, center);
+    width: 70%;
+    border: 2px solid rgb(247, 247, 247);
+    border-radius: 20px;
+    background: #318CE7;
+    margin-bottom: 1em;
+
+    div {
+        @include flex (column, center, center);
+        margin: 1.5em 0em;
+    }
+
+    label {
+        @include textos ($mainFont, $textMdDos, 1.7em, 500, center, rgb(230, 230, 230));
+        margin: 0.4em 0em;
+
+    }
+
+    input {
+        @include textos ($mainFont, $textMd, 1.4em, 300, center, black);
+    }
+
+    .formulario__button {
+        @include flex (row, center, center);
+
+        margin: 1em 0em;
+        width: $widthFull;
+
+        input {
+            // margin: 0.5em 1em;
+            width: 50%;
+            border: 2px solid rgb(224, 219, 219);
+            margin: 0.5em 1em;
+
+        }
+
+    }
+
+
+}

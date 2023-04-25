@@ -2,12 +2,19 @@
 
 // colores
 
+$mainColor: black;
+$secondaryColor: lightblue;
+$keyColor: gold;
+
+
 // fuentes
     $mainFont: 'Roboto', sans-serif;
+    $secundaryFont: 'Space Mono, monospace';
     $textSm: 1em;
     $textSmDos: 1.2em;
     $textMd: 1.3em;
     $textMdDos: 1.5em;
+    $textMdTres: 1.8em;
     $textLg: 2em;
     $textLight: 300;
     $textBold: 500;
@@ -18,4 +25,12 @@
     $widthMid: 50%;
     $width99: 99%;
     $widthFull: 100%;
-    
+    $widthMovil: 90%;
+
+   //  background colores
+   
+   $bgSecondary: rgb(225, 246, 250);
+
+
+   // Border radius
+   $radiusMain: 0.6em;

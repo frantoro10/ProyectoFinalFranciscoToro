@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 body {
-  background-color: rgb(230, 246, 250);
+  background: rgb(0, 181, 255);
+  background: linear-gradient(90deg, rgba(0, 181, 255, 0.518644958) 6%, rgba(0, 181, 255, 0) 28%, rgba(0, 181, 255, 0.52) 50%, rgba(0, 181, 255, 0) 71%, rgba(0, 181, 255, 0.52) 92%);
 }
 
 h1 h2 h3 h4 h5 p {
@@ -24,6 +26,11 @@ p {
   font-size: 1em;
 }
 
+.bg-argentina {
+  background: rgb(0, 181, 255);
+  background: linear-gradient(90deg, rgba(0, 181, 255, 0.3841911765) 22%, rgba(237, 250, 22, 0.4178046218) 48%, rgba(0, 181, 255, 0.3757878151) 76%);
+}
+
 .bg-worldcup {
   background-color: rgba(85, 13, 13, 0.808);
 }
@@ -34,6 +41,11 @@ p {
 
 .bg-ligue {
   background-color: rgb(78, 78, 131);
+}
+
+.bg-text {
+  background: rgb(18, 59, 127);
+  background: linear-gradient(90deg, rgba(18, 59, 127, 0.7119222689) 14%, rgba(44, 195, 164, 0.4514180672) 46%, rgba(15, 121, 120, 0.762342437) 60%, rgba(14, 45, 153, 0.5970763305) 86%);
 }
 
 .text-center {
@@ -77,18 +89,34 @@ p {
 }
 
 .margin-y {
-  margin: 1em 0em;
+  margin: 0 auto;
+  margin-bottom: 2.2em;
+  margin-top: 1em;
 }
 
 .margin-left {
   margin-left: 2.5em !important;
 }
 
+.underline {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 0.4em;
+  text-decoration-style: dashed;
+}
+
 .nav__box {
   background-color: rgb(243, 243, 243);
 }
+.nav__box .navbar-brand:hover {
+  -webkit-animation: pulse 1s;
+  animation: pulse 1s;
+}
+.nav__box ul li a:hover {
+  font-weight: 500;
+}
 
-/* start contenido del index*/
+/* start intro del index*/
 .index-intro__box {
   display: flex;
   flex-direction: column;
@@ -96,6 +124,9 @@ p {
   justify-content: center;
   background-color: rgb(5, 5, 5);
   font-weight: 300 !important;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2em;
 }
 .index-intro__box img {
   width: 100%;
@@ -127,11 +158,45 @@ p {
   font-weight: 500;
   text-align: center;
   color: black;
-  margin: 2em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em auto;
+  width: 90%;
+}
+.index-h2__box h2 {
+  background-color: rgb(225, 246, 250);
+  padding: 0.5em;
+  border-radius: 0.6em;
+}
+
+.index__intro-galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em auto;
+  width: 80%;
+}
+.index__intro-galeria h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  line-height: 1.3em;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  margin: 1em 0em;
+  background-color: rgb(225, 246, 250);
+  padding: 0.5em;
+  border-radius: 0.6em;
+}
+.index__intro-galeria a img {
+  width: 99%;
 }
 
 .index-card__box figure {
-  width: 100%;
+  width: 80%;
   border: 2px solid black;
 }
 
@@ -143,28 +208,38 @@ p {
   font-weight: 300;
 }
 
-.galeria-h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 2em;
-  line-height: 1.9em;
-  font-weight: 500;
-  text-align: center;
-  color: black;
+.galeria__h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 1.5em 0em;
+  width: 99%;
+}
+.galeria__h1 h1 {
+  background-color: rgb(225, 246, 250);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: 300;
+  text-align: center;
+  color: black !important;
+  padding: 0.8em;
+  border-radius: 0.6em;
 }
 
 .galeria__box {
   display: grid;
   justify-content: center;
-  border: 5px solid black;
   grid-template-columns: 48vw 48vw;
-  grid-template-rows: repeat(7, 25vh);
-  grid-template-areas: "img1 img2" "img1 img3" "img4 img5" "img6 img7" "img8 img9" "video1 video2" "video3 video4";
-  column-gap: 0.2em;
-  row-gap: 0.2em;
+  grid-template-rows: repeat(11, 25vh);
+  grid-template-areas: "img2 img2" "img2 img2" "img1 img3" "img1 img4" "img5 img6" "img7 img9" "img8 img8" "video1 video1" "video2 video2" "video3 video3" "video4 video4";
+  margin-left: 0.5em;
+  column-gap: 0.1em;
+  row-gap: 0.1em;
 }
 .galeria__box div {
-  border: 3px solid;
+  border: 1px solid;
 }
 .galeria__box div img {
   width: 100%;
@@ -259,11 +334,31 @@ footer p {
   width: 100%;
 }
 
+.trayectoria__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.trayectoria__intro h1 {
+  background-color: rgb(225, 246, 250);
+  border-radius: 0.6em;
+  padding: 0.8em;
+}
+
+.trayectoria__section--h2 {
+  width: 90%;
+}
+
 .trayectoria__section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 90%;
+  margin: 0 auto;
 }
 .trayectoria__section article {
   background-color: white;
@@ -280,16 +375,16 @@ footer p {
 }
 .trayectoria__section--text h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.3em;
-  line-height: 1.5em;
-  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  font-weight: 700;
   text-align: left;
   color: black;
   margin-left: 0.3em;
 }
 .trayectoria__section--text p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.3em;
   font-weight: 300;
   text-align: left;
@@ -298,20 +393,24 @@ footer p {
 }
 
 .partidos__intro {
-  margin-top: 2em;
+  display: block;
+  margin: 2em auto;
+  background-color: rgb(225, 246, 250);
+  width: 80%;
+  border-radius: 0.6em;
 }
 .partidos__intro h1 {
   font-family: "Roboto", sans-serif;
   font-size: 1.5em;
   line-height: 1.6em;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
   color: black;
 }
 .partidos__intro p {
   font-family: "Roboto", sans-serif;
-  font-size: 1em;
-  line-height: 1.2em;
+  font-size: 1.3em;
+  line-height: 1.4em;
   font-weight: 300;
   text-align: center;
   color: black;
@@ -322,27 +421,34 @@ footer p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 .partidos__box h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.5em;
   line-height: 1.6em;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
   color: black;
+  margin: 0.5em 0em;
 }
 .partidos__box p {
   font-family: "Roboto", sans-serif;
-  font-size: 1em;
-  line-height: 1.2em;
+  font-size: 1.3em;
+  line-height: 1.4em;
   font-weight: 300;
   text-align: center;
   color: black;
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
 .partidos__box article {
   width: 99%;
-  margin-top: 1em;
+  margin: 2em 0em;
+  background-color: rgb(225, 246, 250);
+  border: 2px solid rgb(199, 198, 198);
+  border-radius: 0.6em;
 }
 .partidos__box article div {
   width: 100%;
@@ -354,18 +460,22 @@ footer p {
 .partidos__box table {
   width: 99%;
   font-size: 1.2em;
+  margin-bottom: 2em;
 }
 .partidos__box table thead {
   width: 100%;
   text-align: center;
-  background-color: rgb(214, 214, 214);
+  color: rgb(240, 238, 238);
+  background: rgb(2, 2, 31);
+  background: linear-gradient(90deg, rgba(2, 2, 31, 0.9472163866) 17%, rgb(156, 164, 193) 46%, rgb(2, 18, 74) 77%, rgb(13, 29, 83) 85%);
   border: 1px solid black;
 }
 .partidos__box table thead th {
   border: 2px solid black;
 }
 .partidos__box table tbody {
-  background-color: rgb(10, 8, 8);
+  background: rgb(2, 2, 31);
+  background: linear-gradient(90deg, rgba(2, 2, 31, 0.9472163866) 25%, rgb(0, 29, 130) 46%, rgb(2, 18, 74) 66%, rgb(13, 29, 83) 80%);
   text-align: center;
   width: 100%;
   color: rgb(255, 255, 255);
@@ -391,31 +501,60 @@ footer p {
   border: 2px solid black;
 }
 
+.contacto__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 1em auto;
+}
+.contacto__intro p {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.contacto__intro h1 {
+  border: 2px solid rgb(243, 243, 243);
+  padding: 1em;
+  background-color: #318CE7;
+  color: white;
+}
+
 .contacto__formulario {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
-  border-radius: 20px;
-  background-color: rgb(231, 228, 228);
 }
-.contacto__formulario div {
+
+.contacto__formulario--form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 70%;
+  border: 2px solid rgb(247, 247, 247);
+  border-radius: 20px;
+  background: #318CE7;
+  margin-bottom: 1em;
 }
-.contacto__formulario label {
+.contacto__formulario--form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5em 0em;
+}
+.contacto__formulario--form label {
   font-family: "Roboto", sans-serif;
   font-size: 1.5em;
   line-height: 1.7em;
   font-weight: 500;
   text-align: center;
-  color: black;
+  color: rgb(230, 230, 230);
   margin: 0.4em 0em;
 }
-.contacto__formulario input {
+.contacto__formulario--form input {
   font-family: "Roboto", sans-serif;
   font-size: 1.3em;
   line-height: 1.4em;
@@ -423,10 +562,18 @@ footer p {
   text-align: center;
   color: black;
 }
-.contacto__formulario .formulario_button {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 1em;
+.contacto__formulario--form .formulario__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0em;
+  width: 100%;
+}
+.contacto__formulario--form .formulario__button input {
+  width: 50%;
+  border: 2px solid rgb(224, 219, 219);
+  margin: 0.5em 1em;
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -499,6 +646,9 @@ footer p {
   .footer-icon__box a img {
     width: 100%;
   }
+  .galeria__h1 {
+    font-size: 2em;
+  }
   .galeria__box {
     grid-template-columns: repeat(4, 24.5vw);
     grid-template-rows: repeat(4, 30vh);
@@ -517,6 +667,13 @@ footer p {
   }
   .font-md {
     font-size: 1.3em;
+  }
+  .index-intro__box {
+    width: 95%;
+  }
+  .index-card__box {
+    width: 95%;
+    margin: 0 auto;
   }
   .index-card__box figure {
     width: 33% !important;
@@ -555,6 +712,9 @@ footer p {
   .footer-icon__box a img {
     width: 100%;
   }
+  .galeria__h1 {
+    font-size: 2em;
+  }
   .galeria__box {
     grid-template-columns: repeat(4, 24.5vw);
     grid-template-rows: repeat(4, 40vh);
@@ -574,6 +734,9 @@ footer p {
   .partidos__box h2 {
     font-size: 2em;
     line-height: 1.7em;
+  }
+  .partidos__box article {
+    width: 80%;
   }
   .partidos__box article div {
     width: 100%;
@@ -596,40 +759,35 @@ footer p {
     align-items: center;
     justify-content: center;
   }
-  .contacto__intro {
-    margin: 2em 0em;
-  }
-  .contacto__formulario {
-    width: 100%;
-  }
-  .contacto__formulario div {
+  .contacto__formulario--form div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .contacto__formulario label {
+  .contacto__formulario--form label {
     font-family: "Roboto", sans-serif;
-    font-size: 2em;
-    line-height: 2.2em;
+    font-size: 1.5em;
+    line-height: 1.6em;
     font-weight: 500;
     text-align: center;
-    color: black;
+    color: rgb(240, 240, 240);
     margin: 0.4em 1em;
   }
-  .contacto__formulario input {
+  .contacto__formulario--form input {
     font-family: "Roboto", sans-serif;
-    font-size: 2em;
-    line-height: 2.2em;
+    font-size: 1.5em;
+    line-height: 1.6em;
     font-weight: 300;
     text-align: center;
-    color: black;
+    color: rgb(252, 252, 252);
   }
-  .contacto__formulario textarea {
-    width: 100%;
+  .contacto__formulario--form textarea {
+    width: 25em;
+    height: 20em;
   }
-  .contacto__formulario .formulario_button {
-    margin-left: 7em;
+  .contacto__formulario--form .formulario__button input {
+    margin-left: 6em;
   }
 }
 
