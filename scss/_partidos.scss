@@ -96,8 +96,13 @@
                 @include flex (row, center, center);
                 padding: 1em 0em;
 
-                img {
+                div {
                     width: 30%;
+                    margin: 0em auto;
+                }
+
+                img {
+                    width: 100%;
                     
                 }
             }
