@@ -1,28 +1,24 @@
-
-
-
-
 // commons 
 
 body {
-    background: rgb(0,181,255);
-background: linear-gradient(90deg, rgba(0,181,255,0.5186449579831933) 6%, rgba(0,181,255,0) 28%, rgba(0,181,255,0.52) 50%, rgba(0,181,255,0) 71%, rgba(0,181,255,0.52) 92%);
+    background: rgb(0, 181, 255);
+    background: linear-gradient(90deg, rgba(0, 181, 255, 0.5186449579831933) 6%, rgba(0, 181, 255, 0) 28%, rgba(0, 181, 255, 0.52) 50%, rgba(0, 181, 255, 0) 71%, rgba(0, 181, 255, 0.52) 92%);
 }
 
 h1 h2 h3 h4 h5 p {
     font-family: $mainFont;
     color: black;
-    
+
 }
 
 h1 {
     font-size: $textMdDos;
-    
+
 }
 
 h2 {
     font-size: $textMd;
-    
+
 }
 
 h3 {
@@ -31,7 +27,7 @@ h3 {
 
 p {
     font-size: $textSm;
-    
+
 }
 
 
@@ -39,13 +35,13 @@ p {
 
 
 .bg-argentina {
-    background: rgb(0,181,255);
-    background: linear-gradient(90deg, rgba(0,181,255,0.3841911764705882) 22%, rgba(237,250,22,0.41780462184873945) 48%, rgba(0,181,255,0.3757878151260504) 76%);
+    background: rgb(0, 181, 255);
+    background: linear-gradient(90deg, rgba(0, 181, 255, 0.3841911764705882) 22%, rgba(237, 250, 22, 0.41780462184873945) 48%, rgba(0, 181, 255, 0.3757878151260504) 76%);
 }
 
 .bg-worldcup {
     background-color: rgba(85, 13, 13, 0.808);
-   
+
 }
 
 .bg-ucl {
@@ -53,13 +49,13 @@ p {
 }
 
 .bg-ligue {
-     background-color: rgb(78, 78, 131);
+    background-color: rgb(78, 78, 131);
 }
 
 .bg-text {
-    background: rgb(18,59,127);
-background: linear-gradient(90deg, rgba(18,59,127,0.711922268907563) 14%, rgba(44,195,164,0.4514180672268907) 46%, rgba(15,121,120,0.76234243697479) 60%, rgba(14,45,153,0.5970763305322129) 86%);
-    
+    background: rgb(18, 59, 127);
+    background: linear-gradient(90deg, rgba(18, 59, 127, 0.711922268907563) 14%, rgba(44, 195, 164, 0.4514180672268907) 46%, rgba(15, 121, 120, 0.76234243697479) 60%, rgba(14, 45, 153, 0.5970763305322129) 86%);
+
 }
 
 
@@ -84,7 +80,7 @@ background: linear-gradient(90deg, rgba(18,59,127,0.711922268907563) 14%, rgba(4
 }
 
 // text color
- 
+
 .text-lightblue {
     color: lightblue !important;
 }
@@ -129,6 +125,5 @@ background: linear-gradient(90deg, rgba(18,59,127,0.711922268907563) 14%, rgba(4
     text-decoration: underline;
     text-decoration-color: white;
     text-underline-offset: 0.4em;
-   text-decoration-style: dashed;
+    text-decoration-style: dashed;
 }
-

@@ -582,6 +582,60 @@ footer p {
   margin: 0.5em 1em;
 }
 
+.error404__h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  line-height: 2.1em;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(14, 13, 13);
+  margin: 1em 0em;
+}
+
+.change-photos {
+  background-color: rgb(225, 246, 250);
+  padding: 1em;
+  margin: 1em auto;
+  width: 90%;
+}
+.change-photos p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: 500;
+  text-align: center;
+  color: red;
+  margin: 1em 0em;
+}
+.change-photos a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(104, 165, 104);
+}
+.change-photos .change-photo--img:nth-of-type(2) {
+  display: none;
+}
+.change-photos img {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.change-photos:hover {
+  cursor: pointer;
+}
+.change-photos:hover p {
+  color: black;
+}
+.change-photos:hover .change-photo--img:nth-of-type(1) {
+  display: none;
+}
+.change-photos:hover .change-photo--img:nth-of-type(2) {
+  display: block;
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
   .index-intro__box article h1 {
     font-size: 2em;
@@ -803,6 +857,28 @@ footer p {
   }
   .contacto__formulario--form .formulario__button input {
     margin-left: 6em;
+  }
+  .error404__h1 {
+    font-size: 2.5em;
+  }
+  .change-photos {
+    width: 65%;
+  }
+  .change-photos p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8em;
+    line-height: 1.8em;
+    font-weight: 400;
+    text-align: center;
+    color: red;
+  }
+  .change-photos a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8em;
+    line-height: 1.8em;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(104, 165, 104);
   }
 }
 @media (min-width: 1500px) {

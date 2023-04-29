@@ -1,19 +1,18 @@
-
 // mixin de textos 
 
-@mixin textos ($Font, $size, $line, $weight, $align, $color){
+@mixin textos ($Font, $size, $line, $weight, $align, $color) {
     font-family: $Font;
     font-size: $size;
     line-height: $line;
     font-weight: $weight;
     text-align: $align;
     color: $color;
-    
+
 }
 
 // mixin de flexbox
 
-@mixin flex ($direction, $align, $justify){
+@mixin flex ($direction, $align, $justify) {
     display: flex;
     flex-direction: $direction;
     align-items: $align;
@@ -23,25 +22,25 @@
 // mixin de breakpoints con condicionales
 
 @mixin media($breakpoint) {
-    @if $breakpoint == mobile {
+    @if $breakpoint ==mobile {
         @media (width < 768px) {
             @content;
         }
     }
 
-    @if $breakpoint == tablet {
+    @if $breakpoint ==tablet {
         @media (min-width: 768px) and (max-width: 1200px) {
             @content;
         }
     }
 
-    @if $breakpoint == desktop {
+    @if $breakpoint ==desktop {
         @media (width > 1200px) {
             @content;
         }
     }
 
-    @if $breakpoint == desktopLg {
+    @if $breakpoint ==desktopLg {
         @media (width > 1500px) {
             @content;
         }

@@ -10,10 +10,10 @@
     background-color: $bgSecondary;
     width: $widthMovil;
     border-radius: $radiusMain;
-    
+
     h1 {
         @include textos ($mainFont, $textMdDos, 1.6em, 700, center, black);
-        
+
     }
 
     p {
@@ -66,8 +66,8 @@
             width: $widthFull;
             text-align: center;
             color: rgb(240, 238, 238);
-            background: rgb(2,2,31);
-            background: linear-gradient(90deg, rgba(2,2,31,0.9472163865546218) 17%, rgba(156,164,193,1) 46%, rgba(2,18,74,1) 77%, rgba(13,29,83,1) 85%);
+            background: rgb(2, 2, 31);
+            background: linear-gradient(90deg, rgba(2, 2, 31, 0.9472163865546218) 17%, rgba(156, 164, 193, 1) 46%, rgba(2, 18, 74, 1) 77%, rgba(13, 29, 83, 1) 85%);
             border: 1px solid black;
 
             th {
@@ -76,8 +76,8 @@
         }
 
         tbody {
-            background: rgb(2,2,31);
-            background: linear-gradient(90deg, rgba(2,2,31,0.9472163865546218) 25%, rgba(0,29,130,1) 46%, rgba(2,18,74,1) 66%, rgba(13,29,83,1) 80%);
+            background: rgb(2, 2, 31);
+            background: linear-gradient(90deg, rgba(2, 2, 31, 0.9472163865546218) 25%, rgba(0, 29, 130, 1) 46%, rgba(2, 18, 74, 1) 66%, rgba(13, 29, 83, 1) 80%);
             text-align: center;
             width: $widthFull;
             color: rgb(255, 255, 255);
@@ -101,7 +101,7 @@
                 img {
                     width: 20%;
                     margin: 0 auto;
-                    
+
                 }
             }
 

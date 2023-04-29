@@ -1,11 +1,13 @@
 // nav
 
 .nav__box {
-    background-color: map-get($map: $paleta-box, $key: uno );
+    background-color: map-get($map: $paleta-box, $key: uno);
+
     .navbar-brand:hover {
-    -webkit-animation: pulse 1s;
-    animation: pulse 1s;
+        -webkit-animation: pulse 1s;
+        animation: pulse 1s;
     }
+
     ul {
         li {
             a:hover {

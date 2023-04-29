@@ -1,0 +1,52 @@
+// H1
+.error404__h1 {
+    @include textos ($mainFont, $textLg, 2.1em, 500, center, rgb(14, 13, 13));
+    margin: 1em 0em;
+}
+
+// Codigo para cambiar de imagen en hover!
+
+.change-photos {
+    background-color: $bgSecondary;
+    padding: 1em;
+    margin: 1em auto;
+    width: 90%;
+
+    p {
+        @include textos ($mainFont, $textSmDos, 1.4em, 500, center, red);
+        margin: 1em 0em;
+    }
+
+    a {
+        @include textos ($mainFont, $textSm, 1.2em, 500, center, rgb(104, 165, 104));
+
+    }
+
+    .change-photo--img:nth-of-type(2) {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        margin: 1em 0;
+
+    }
+
+}
+
+.change-photos:hover {
+    cursor: pointer;
+
+    p {
+        color: black;
+    }
+
+    .change-photo--img:nth-of-type(1) {
+        display: none;
+    }
+
+    .change-photo--img:nth-of-type(2) {
+        display: block;
+    }
+
+}

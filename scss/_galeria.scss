@@ -1,114 +1,118 @@
 // Galeria 
 
 .galeria__h1 {
-    @include flex (column, center, center);
-    margin: 1.5em 0em;
-    width: $width99;
-      h1 {
-         background-color: $bgSecondary;
-         @include textos ($mainFont, $textMdDos, 1.4em, $textLight, center, black !important);
-         padding: 0.8em;
-         border-radius: $radiusMain;
-      }
+   @include flex (column, center, center);
+   margin: 1.5em 0em;
+   width: $width99;
+
+   h1 {
+      background-color: $bgSecondary;
+      @include textos ($mainFont, $textMdDos, 1.4em, $textLight, center, black !important);
+      padding: 0.8em;
+      border-radius: $radiusMain;
+   }
 }
 
 // Start Galeria 
 
 .galeria__box {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 48vw 48vw;
-    grid-template-rows: repeat(11,25vh);
-    grid-template-areas:    
-    "img2 img2"
-    "img2 img2"
-    "img1 img3"
-    "img1 img4"
-    "img5 img6"
-    "img7 img9"
-    "img8 img8"
-    "video1 video1"
-    "video2 video2"
-    "video3 video3"
-    "video4 video4"
-    ;
-    column-gap: 0.1em;
-    row-gap: 0.1em;
-    
-        div {
-            border: 1px solid;
-            
+   display: grid;
+   justify-content: center;
+   grid-template-columns: 48vw 48vw;
+   grid-template-rows: repeat(11, 25vh);
+   grid-template-areas:
+      "img2 img2"
+      "img2 img2"
+      "img1 img3"
+      "img1 img4"
+      "img5 img6"
+      "img7 img9"
+      "img8 img8"
+      "video1 video1"
+      "video2 video2"
+      "video3 video3"
+      "video4 video4"
+   ;
+   column-gap: 0.1em;
+   row-gap: 0.1em;
 
-            img {
-                width: $widthFull;
-                height: 100%;
-                object-fit: cover;
-            }
-    
-            iframe {
-                width: $widthFull;
-                height: 100%;
-            }
-        }
+   div {
+      border: 1px solid;
+
+
+      img {
+         width: $widthFull;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      iframe {
+         width: $widthFull;
+         height: 100%;
+      }
+   }
 }
 
 .gimg1 {
-    grid-area: img1;       
+   grid-area: img1;
 
- }
- .gimg2 {
+}
 
-    grid-area: img2;
+.gimg2 {
 
- }
- .gimg3 {
-    grid-area: img3;
- }
+   grid-area: img2;
 
- .gimg4 {
-    grid-area: img4;
- }
- .gimg5 {
+}
 
-    grid-area: img5;
- }
+.gimg3 {
+   grid-area: img3;
+}
 
- .gimg6 {
-    grid-area: img6;
- }
+.gimg4 {
+   grid-area: img4;
+}
 
- .gimg7 {
-    grid-area: img7;
- }
+.gimg5 {
 
- .gimg8 {
-    grid-area: img8;
- }
+   grid-area: img5;
+}
 
- .gimg9 {
-    grid-area: img9;
- }
+.gimg6 {
+   grid-area: img6;
+}
 
- .g-video1 {
-    grid-area: video1;
-    width: 100%;
+.gimg7 {
+   grid-area: img7;
+}
 
- }
+.gimg8 {
+   grid-area: img8;
+}
 
- .g-video2 {
-    grid-area: video2;
-    width: 100%;
-    
- }
+.gimg9 {
+   grid-area: img9;
+}
 
- .g-video3 {
-    grid-area: video3;
-    width: 100%;
-    
- }
+.g-video1 {
+   grid-area: video1;
+   width: 100%;
 
- .g-video4 {
-    grid-area: video4;
-    width: 100%;
-    
- }
+}
+
+.g-video2 {
+   grid-area: video2;
+   width: 100%;
+
+}
+
+.g-video3 {
+   grid-area: video3;
+   width: 100%;
+
+}
+
+.g-video4 {
+   grid-area: video4;
+   width: 100%;
+
+}
