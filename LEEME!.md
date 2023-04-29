@@ -37,7 +37,6 @@ Librerias que he utilizado: He utilizado Animate.css , wow y fresco!
 Para finalizar: Muchas gracias a la Profe Laura y a mi tutor Gerardo! Ambos excelentes con su funcion. 
 Laura ha sido increible, y gracias a su experiencia nos ha podido enseñar y hacer entender las cosas mucho mas faciles. Muy profesional en su trabajo y divertida! Coderhouse a las afterclass las deberia llamar "Masterclass" exclusivamente para la profe Laura! Jajaja. 10/10
 Gerardo: Un tutor muy atento a cada duda, muy bueno dando diferentes tips y detallando errores del estudiante con su respectiva solucion! Muy profesional en su funcion.
-Ojala que en el curso de Javascript pueda tener un profe y tutor como ustedess che! Jajaja.
 
 
 PD: Me perdi el top 10 por no haber podido asistir a una clase por el horario de mi trabajo XD. Pero no es excusa, porque tambien me olvide de valorar una clase por bo... jajaja!
